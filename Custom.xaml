@@ -438,28 +438,28 @@
 <local:MyCard Grid.Column="0"  Title="𝑮𝒂𝒎𝒊𝒏𝒈♛" CanSwap="True" IsSwaped="True" Margin="0,0,0,15" Height="85"> 
     <StackPanel Margin="25,40,23,15">
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
-                        <local:MyButton Grid.Column="0"  Margin="23,0,25,0" Width="200" Height="35" ColorType="Highlight" HorizontalAlignment="Center"
+                        <local:MyButton Grid.Column="0"  Margin="23,0,25,0" Width="150" Height="35" ColorType="Highlight" HorizontalAlignment="Center"
                    Text="Troll Hack" EventType="启动游戏" EventData="1.12.2-Hack" />
 
         </StackPanel>  
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
-        <local:MyButton  Margin="23,0,25,0" Width="200" Height="35" ColorType="Highlight" HorizontalAlignment="Center"
+        <local:MyButton  Margin="23,0,25,0" Width="150" Height="35" ColorType="Highlight" HorizontalAlignment="Center"
                    Text="Pryo-冰林L" EventType="启动游戏" EventData="1.12.2-Pryo-冰林L" />
 
         </StackPanel>  
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
-        <local:MyButton  Margin="23,0,25,0" Width="200" Height="35" ColorType="Highlight" HorizontalAlignment="Center"
+        <local:MyButton  Margin="23,0,25,0" Width="150" Height="35" ColorType="Highlight" HorizontalAlignment="Center"
                    Text="Sum" EventType="启动游戏" EventData="1.12.2-Sum"/>
 
         </StackPanel>  
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
-                        <local:MyButton Grid.Column="0"  Margin="23,0,25,0" Width="200" Height="35" ColorType="Highlight" HorizontalAlignment="Center"
+                        <local:MyButton Grid.Column="0"  Margin="23,0,25,0" Width="150" Height="35" ColorType="Highlight" HorizontalAlignment="Center"
                    Text="Lunar Client" EventType="启动游戏" EventData="LC" />
 
 
         </StackPanel>  
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
-        <local:MyButton  Margin="23,0,25,0" Width="200" Height="35" ColorType="Highlight" HorizontalAlignment="Center"
+        <local:MyButton  Margin="23,0,25,0" Width="150" Height="35" ColorType="Highlight" HorizontalAlignment="Center"
                    Text="Minecraft 1.20.1-OptiFine" EventType="启动游戏" EventData="1.20.1-OptiFine_I6_pre1" />
 
         </StackPanel>  
