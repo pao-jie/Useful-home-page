@@ -1,4 +1,4 @@
-﻿<StackPanel.Resources>
+<StackPanel.Resources>
 	<Style TargetType="local:MyButton" x:Key="RunButton">
 		<Setter Property="Margin" Value="5,0,0,5"/>
 		<Setter Property="Padding" Value="7,0,7,0"/>
@@ -32,27 +32,27 @@
 				<ColorAnimation BeginTime="0:0:5"
 					Storyboard.TargetName="Text1"
 					Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
-					From="#363DAD" To="#00000000" Duration="0:0:1"/>
+					From="#FCE1DE" To="#00000000" Duration="0:0:1"/>
 				<ColorAnimation BeginTime="0:0:16"
 					Storyboard.TargetName="Text1"
 					Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
-					From="#00000000" To="#363DAD" Duration="0:0:1"/>
+					From="#00000000" To="#FCE1DE" Duration="0:0:1"/>
 				<ColorAnimation BeginTime="0:0:6"
 					Storyboard.TargetName="Text2" 
 					Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
-					From="#00000000" To="#363DAD" Duration="0:0:1"/>
+					From="#00000000" To="#FCE1DE" Duration="0:0:1"/>
 				<ColorAnimation BeginTime="0:0:10"
 					Storyboard.TargetName="Text2"
 					Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
-					From="#363DAD" To="#00000000" Duration="0:0:1"/>
+					From="#FCE1DE" To="#00000000" Duration="0:0:1"/>
 				<ColorAnimation BeginTime="0:0:11"
 					Storyboard.TargetName="Text3"
 					Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
-					From="#00000000" To="#363DAD" Duration="0:0:1"/>
+					From="#00000000" To="#FCE1DE" Duration="0:0:1"/>
 				<ColorAnimation BeginTime="0:0:15"
 					Storyboard.TargetName="Text3"
 					Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
-					From="#363DAD" To="#00000000" Duration="0:0:1"/>
+					From="#FCE1DE" To="#00000000" Duration="0:0:1"/>
 
 
 
@@ -120,13 +120,13 @@
 
 
   
-    	<TextBlock x:Name="Text1" HorizontalAlignment="Left" Text=" Hello World 6.6 𝟮𝟬𝟮𝟯©    " FontSize="13" Style="{StaticResource Text}" Foreground="#363DAD" Margin="12,12">
+    	<TextBlock x:Name="Text1" HorizontalAlignment="Left" Text=" Hello World 6.6 𝟮𝟬𝟮𝟯©    " FontSize="13" Style="{StaticResource Text}" Foreground="#FCE1DE" Margin="12,12">
 		
 	    </TextBlock>
-	    <TextBlock x:Name="Text2" HorizontalAlignment="Left" Text="『未知全貌，不予评价。』     "   FontSize="13" Style="{StaticResource Text}" Foreground="#00363DAD"  Margin="12,12">
+	    <TextBlock x:Name="Text2" HorizontalAlignment="Left" Text="『未知全貌，不予评价。』     "   FontSize="13" Style="{StaticResource Text}" Foreground="#00FCE1DE"  Margin="12,12">
 		
 	    </TextBlock>
-	    <TextBlock x:Name="Text3" HorizontalAlignment="Left" Text="『给时间以生命，给岁月以文明！』" Style="{StaticResource Text}"    FontSize="13" Foreground="#00363DAD"  Margin="12,12">
+	    <TextBlock x:Name="Text3" HorizontalAlignment="Left" Text="『给时间以生命，给岁月以文明！』" Style="{StaticResource Text}"    FontSize="13" Foreground="#00FCE1DE"  Margin="12,12">
 		
 	    </TextBlock>
       
@@ -134,8 +134,28 @@
 
     </local:MyCard>
 
+<local:MyCard Margin="0,0,0,12" Title="欢迎页" CanSwap="True" IsSwaped="False">
+     <StackPanel Margin="24,40,24,15">
+		<TextBlock Margin="0,0,0,4" Foreground="#FCE1DE" FontSize="20" HorizontalAlignment="Center"
+					Text="Hello World" />
+			<local:MyHint Margin="0,8,0,2" IsWarn="False"
+					Text="又是新的一天。&#xA;记得磕点续命药" />
+		<local:MyHint Text="请不要在无规则服以外的服务器开挂!" />
 
-
+		<local:MyListItem Margin="-5,15,-5,0" 
+			Logo="https://img1.imgtp.com/2023/10/14/pVfPGcYR.png" Title="VAPE配置" Info="给新手的" 
+			EventType="打开网页" EventData="https://www.bilibili.com/video/BV1MY4y1N7FW" Type="Clickable" />
+		<local:MyListItem Margin="-5,15,-5,0" 
+			Logo="https://img1.imgtp.com/2023/10/14/pVfPGcYR.png" Title="VAPE PVP材质包" Info="好看的一批" 
+			EventType="打开网页" EventData="https://www.bilibili.com/video/BV1oN4y1g7qe" Type="Clickable" />
+		<local:MyListItem Margin="-5,15,-5,0" 
+			Logo="https://img1.imgtp.com/2023/10/14/lcjXC9iq.jpg" Title="学习Xaml语言" Info="制作主页" 
+			EventType="打开网页" EventData="https://learn.microsoft.com/zh-cn/xamarin/xamarin-forms/xaml/" Type="Clickable" />
+		
+		<local:MyButton Width="140" Height="35" HorizontalAlignment="Right" Padding="13,0,13,0"  ColorType="Highlight"
+             Text="主页" EventType="弹出窗口" EventData="wei_xiao|B站主页&#58;\nhttps://space.bilibili.com/1784524514" />
+     </StackPanel>
+</local:MyCard>
 
 <Grid UseLayoutRounding="True">
 	<Grid.RowDefinitions>
@@ -149,34 +169,34 @@
 	<GridSplitter Grid.Column="1" Width="5" Margin="0,0,0,20" Opacity="0"
 		VerticalAlignment="Stretch" HorizontalAlignment="Center"/>
 
-<local:MyCard Title="𝑻𝒐𝒐𝒍𝑪𝒉𝒆𝒔𝒕♚" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+<local:MyCard Title="𝑻𝒐𝒐𝒍𝑪𝒉𝒆𝒔𝒕♚" Margin="0,0,0,20" CanSwap="True" IsSwaped="False" >
     <StackPanel Margin="25,40,23,15">
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
-            <local:MyButton Margin="0,0,5,0" Width="105" Height="35"  Padding="13,0,13,0" ColorType="Highlight"
+            <local:MyButton Margin="0,0,5,0" Width="85" Height="35"  Padding="13,0,13,0" ColorType="Highlight"
                    Text="忘记密码" EventType="弹出窗口" EventData="哈哈哈|我也忘了。" ToolTip="我的正版账号" />
-            <local:MyButton Width="105" Height="35"  Padding="13,0,13,0" Margin="0,0,5,0" ColorType="Highlight"
+            <local:MyButton Margin="0,0,5,0" Width="85" Height="35"  Padding="13,0,13,0" ColorType="Highlight"
                    Text="LittleSkin" EventType="打开网页" EventData="https://littleskin.cn/"/>
 
         </StackPanel>        
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
-            <local:MyButton Margin="0,0,5,0" Width="105" Height="35"  Padding="13,0,13,0" ColorType="Highlight"
+            <local:MyButton Margin="0,0,5,0" Width="85" Height="35"  Padding="13,0,13,0" ColorType="Highlight"
                   Text="BiliBili" EventType="打开网页" EventData="https://www.bilibili.com/" />
-            <local:MyButton Margin="0,0,5,0" Width="105" Height="35"  Padding="13,0,13,0" ColorType="Highlight"
+            <local:MyButton Margin="0,0,5,0" Width="85" Height="35"  Padding="13,0,13,0" ColorType="Highlight"
                   Text="清理垃圾" EventType="清理垃圾"/>
 
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
-            <local:MyButton Margin="0,0,5,0" Width="105" Height="35"  Padding="13,0,13,0" ColorType="Highlight"
-                  Text="材质包下载" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1gG4y197nY/" />
-            <local:MyButton Width="105" Height="35"  Padding="13,0,13,0" Margin="0,0,5,0" ColorType="Highlight"                   
-                  Text="📝指令编辑" EventType="打开网页" EventData="https://www.mcmod.cn/tools/cbcreator/#/home/" />
+            <local:MyButton Margin="0,0,5,0" Width="85" Height="35"  Padding="13,0,13,0" ColorType="Highlight"
+                  Text="材质包" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1gG4y197nY/" />
+            <local:MyButton Margin="0,0,5,0" Width="85" Height="35"  Padding="13,0,13,0" ColorType="Highlight"                   
+                  Text="指令编辑" EventType="打开网页" EventData="https://www.mcmod.cn/tools/cbcreator/#/home/" />
 
         </StackPanel>        
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
-            <local:MyButton Margin="0,0,5,0" Width="105" Height="35"  Padding="13,0,13,0" ColorType="Highlight"
+            <local:MyButton Margin="0,0,5,0" Width="85" Height="35"  Padding="13,0,13,0" ColorType="Highlight"
                   Text="皮肤下载" EventType="打开网页" EventData="https://littleskin.cn/skinlib/show/296078" />
-            <local:MyButton Width="105" Height="35"  Padding="13,0,13,0" Margin="0,0,5,0" ColorType="Highlight"                   
+            <local:MyButton Margin="0,0,5,0" Width="85" Height="35"  Padding="13,0,13,0" ColorType="Highlight"                   
                   Text="皮肤显示" EventType="弹出窗口" EventData="LittleSkin皮肤库使用方法|1.注册账号 &#x000D; 2.打开用户中心 &#x000D; 3.创建一个角色,给他一个皮肤。&#x000D; 4.把按钮拖到启动器上" ToolTip="LittleSkin皮肤库" />
 
 
@@ -185,7 +205,7 @@
     </StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="  💖" Margin="0,0,0,15" Grid.Row="0" Grid.Column="3" CanSwap="True" Height="260">
+<local:MyCard Title="  💖" Margin="0,0,0,20" Grid.Row="0" Grid.Column="3" CanSwap="True" Height="260">
 
 
 
@@ -313,7 +333,38 @@
 </Grid>
 
 
+<Grid UseLayoutRounding="True">
+	<Grid.RowDefinitions>
+		<RowDefinition></RowDefinition>
+	</Grid.RowDefinitions>
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="12*"></ColumnDefinition>
+		<ColumnDefinition Width="0.5*"></ColumnDefinition>
+		<ColumnDefinition Width="9*"></ColumnDefinition>
+	</Grid.ColumnDefinitions>
+	<GridSplitter Grid.Column="1" Width="20" Margin="0,0,0,20" Opacity="0"
+		VerticalAlignment="Stretch" HorizontalAlignment="Center"/>
 
+<local:MyCard Title="回声洞" Margin="0,0,0,15"  Grid.Column="2" >
+    <StackPanel Margin="25,40,23,15">
+		<TextBlock Margin="5,0,5,12" TextWrapping="Wrap" HorizontalAlignment="Center" Foreground="{DynamicResource ColorBrush1}" Text="{cave}" />
+		<local:MyButton Margin="0,-10,-5,0" Width="15" Height="15" HorizontalAlignment="Right" ToolTip="刷新" EventType="刷新主页" EventData="回声洞">
+             <Path Fill="{DynamicResource ColorBrush5}" Stretch="Fill" Width="15" Height="15">
+                  <Path.Data>
+                       <PathGeometry FillRule="Nonzero" Figures="M256.455,8C322.724,8.119,382.892,34.233,427.314,76.685L463.029,40.97C478.149,25.851,504,36.559,504,57.941L504,192C504,205.255,493.255,216,480,216L345.941,216C324.559,216,313.851,190.149,328.97,175.029L370.72,133.279C339.856,104.38 299.919,88.372 257.49,88.006 165.092,87.208 87.207,161.983 88.0059999999999,257.448 88.764,348.009 162.184,424 256,424 297.127,424 335.997,409.322 366.629,382.444 371.372,378.283 378.535,378.536 382.997,382.997L422.659,422.659C427.531,427.531 427.29,435.474 422.177,440.092 378.202,479.813 319.926,504 256,504 119.034,504 8.001,392.967 8,256.002 7.999,119.193 119.646,7.755 256.455,8z"/>
+                  </Path.Data>
+             </Path>
+        </local:MyButton>        
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Grid.Column="0"  Title="日历" Margin="0,0,0,15" Height="250"> 
+    <StackPanel Margin="25,40,23,15">
+		<Calendar HorizontalAlignment="Center" Margin="0,12,0,10" Grid.Column="0"/>
+    </StackPanel>  
+
+</local:MyCard>
+</Grid>
 
 
 
@@ -330,7 +381,7 @@
 	</Grid.ColumnDefinitions>
 	<GridSplitter Grid.Column="1" Width="20" Margin="0,0,0,20" Opacity="0"
 		VerticalAlignment="Stretch" HorizontalAlignment="Center"/>
-        <local:MyCard Title="wei_xiao 𝑯𝒐𝒎𝒆𝒑𝒂𝒈𝒆" Margin="0,0,0,15" CanSwap="True" Grid.Column="2" IsSwaped="True">
+        <local:MyCard Title="wei_xiao 𝑯𝒐𝒎𝒆𝒑𝒂𝒈𝒆" Margin="0,0,0,15" CanSwap="True" IsSwaped="False" Grid.Column="2" >
 
         <StackPanel Margin="25,40,23,15">
 
@@ -345,7 +396,8 @@
 	        </Grid.ColumnDefinitions>
 	        <GridSplitter Grid.Column="1" Width="10" Margin="0,0,0,10" Opacity="0"
 		        VerticalAlignment="Stretch" HorizontalAlignment="Center"/>
-            <local:MyTextButton Margin="0,1,0,0" HorizontalAlignment="Center" Grid.Column="1"
+
+            <local:MyTextButton Margin="0,1,0,0" HorizontalAlignment="Center" Grid.Column="1" 
                    Text="裁缝:wei_xiao" EventType="打开网页" EventData="https://space.bilibili.com/1784524514" />
         		<Path Fill="{DynamicResource ColorBrush5}" Stretch="Fill" Width="19" Height="18">
 			<Path.Data>
@@ -435,31 +487,31 @@
             </Grid>
      </StackPanel>
 </local:MyCard>
-<local:MyCard Grid.Column="0"  Title="𝑮𝒂𝒎𝒊𝒏𝒈♛" CanSwap="True" IsSwaped="True" Margin="0,0,0,15" Height="85"> 
+<local:MyCard Grid.Column="0"  Title="𝑮𝒂𝒎𝒊𝒏𝒈♛" CanSwap="True" IsSwaped="False" Margin="0,0,0,15" Height="300" > 
     <StackPanel Margin="25,40,23,15">
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
-                        <local:MyButton Grid.Column="0"  Margin="23,0,25,0" Width="100" Height="35" ColorType="Highlight" HorizontalAlignment="Center"
+                        <local:MyButton Grid.Column="0"  Margin="23,0,25,0" Width="170" Height="35" ColorType="Highlight" HorizontalAlignment="Center"
                    Text="Troll Hack" EventType="启动游戏" EventData="1.12.2-Hack" />
 
         </StackPanel>  
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
-        <local:MyButton  Margin="23,0,25,0" Width="100" Height="35" ColorType="Highlight" HorizontalAlignment="Center"
+        <local:MyButton  Margin="23,0,25,0" Width="170" Height="35" ColorType="Highlight" HorizontalAlignment="Center"
                    Text="Pryo-冰林L" EventType="启动游戏" EventData="1.12.2-Pryo-冰林L" />
 
         </StackPanel>  
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
-        <local:MyButton  Margin="23,0,25,0" Width="100" Height="35" ColorType="Highlight" HorizontalAlignment="Center"
+        <local:MyButton  Margin="23,0,25,0" Width="170" Height="35" ColorType="Highlight" HorizontalAlignment="Center"
                    Text="Sum" EventType="启动游戏" EventData="1.12.2-Sum"/>
 
         </StackPanel>  
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
-                        <local:MyButton Grid.Column="0"  Margin="23,0,25,0" Width="100" Height="35" ColorType="Highlight" HorizontalAlignment="Center"
+                        <local:MyButton Grid.Column="0"  Margin="23,0,25,0" Width="170" Height="35" ColorType="Highlight" HorizontalAlignment="Center"
                    Text="Lunar Client" EventType="启动游戏" EventData="LC" />
 
 
         </StackPanel>  
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
-        <local:MyButton  Margin="23,0,25,0" Width="100" Height="35" ColorType="Highlight" HorizontalAlignment="Center"
+        <local:MyButton  Margin="23,0,25,0" Width="170" Height="35" ColorType="Highlight" HorizontalAlignment="Center"
                    Text="Minecraft 1.20.1-OptiFine" EventType="启动游戏" EventData="1.20.1-OptiFine_I6_pre1" />
 
         </StackPanel>  
@@ -795,6 +847,3 @@
     
   </StackPanel>
 </StackPanel>
-
-
-
